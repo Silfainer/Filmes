@@ -27,27 +27,27 @@ function draw() {
 function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
   if (idade >= 10) {
     if (idade >= 14) {
-      return "Lua Negra";
+      return "Coraline";
     } else {
       if (idade >= 1) {
         if(gostaDeFantasia || gostaDeAventura) {
-          return "Pânico na Floresta 6";        
+          return "A ilha da fantasia";          
         } else{
-         return "Armadilha";
+         return "A monster calls";
         }
       } else {
         if (gostaDeFantasia) {
-          return "Triângulo do Medo";
+          return "A origem dos guardiões";
         } else {
-          return "A Origem do Medo";
+          return "Dezesseis luas";
         }
       }
     }
   } else {
     if (gostaDeFantasia) {
-      return "Arcadian";
+      return "O castelo animado";
     } else {
-      return "Os Observadores";
+      return "Os boxtrolls";
     }
   }
 }
